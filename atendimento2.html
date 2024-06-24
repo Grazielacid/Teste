@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento2</title>
+    <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/src/css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <i class="fa-regular fa-user"></i>
+                <p>Caio Coelho</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-id-card-clip icon"></i>Prontuário</a></li>
+                    <li><a href="#">Pacientes</a></li>
+                    <li><a href="#" class="active">Atendimento</a></li>
+                    <li><a href="#"><i class="fa-solid fa-calendar-day icon"></i>Agendamento</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info icon"></i>Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Atendimentos</h1>
+                <div class="total-pacientes">
+                    <p>10</p>
+                    <span>Total de Atendimentos</span>
+                </div>
+            </header>
+            <div class="table-container">
+                <button class="add-patient" onclick="irParaIncluirAtendimento()">+ Incluir atendimento</button>  
+                <input type="text" id="search" placeholder="Pesquisar por paciente">
+                <table>
+                    <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Paciente</th>
+                    <th>Queixa Principal</th>
+                    <th>Código</th>
+                    <th>Diagnóstico</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Paciente A</td>
+                    <td>Dor no dente</td>
+                    <td>12312asdad</td>
+                    <td>HIV positivo</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Paciente B</td>
+                    <td>Dor no dente</td>
+                    <td>12312asdad</td>
+                    <td>HIV positivo</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Paciente C</td>
+                    <td>Dor no dente</td>
+                    <td>12312asdad</td>
+                    <td>HIV positivo</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Paciente D</td>
+                    <td>Dor no dente</td>
+                    <td>12312asdad</td>
+                    <td>HIV positivo</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="load-more">Carregar +</button>
+        <div class="pagination">
+            <label for="rows-per-page">Exibir</label>
+            <select id="rows-per-page">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+            </select>
+            <span>por vez</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

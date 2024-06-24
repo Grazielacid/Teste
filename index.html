@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Clinica</title>
+    <script src="https://kit.fontawesome.com/06f0979ef7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/src/js/index.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Olá,<br>Ficamos felizes em ver você novamente</h1>
+            <p>Caso não tenha cadastro, crie sua conta agora!</p>
+            <button class="cadastrar-btn" onclick="irParaCadastro()">Cadastrar</button>
+        </div>
+        <div class="content">
+            <h2>Login</h2>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" id="email-cpf" placeholder="Nome ou CPF">
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Senha">
+                <i class="fas fa-eye" onclick="togglePassword()"></i>
+            </div>
+            <button class="entrar-btn">Entrar</button>
+        </div>
+    </div>
+
+    <script>
+        function irParaCadastro() {
+            window.location.href = 'cadastro.html';
+        }
+    </script>
+
+</body>
+</html>

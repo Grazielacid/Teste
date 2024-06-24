@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro2</title>
+    <script src="https://kit.fontawesome.com/06f0979ef7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Seja Bem-vindo!</h1>
+            <p>Acesse sua conta agora mesmo.</p>
+            <button class="cadastrar-btn">Login</button>
+        </div>
+        <div class="content">
+            <h2>Cadastre-se</h2>
+            <div class="input-group">
+                <input type="text" id="tratamento" placeholder="Tratamento">
+            </div>
+            <div class="input-group">
+                <input type="text" id="conselhoprofissional" placeholder="Conselho Profissional">
+            </div>
+            <div class="input-group">
+                <input type="text" id="registro" placeholder="Registro">
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-caret-down"></i>
+                <input type="text" id="UF" placeholder="UF">
+            </div>
+            <div class="input-group">
+                <i class="fa-solid fa-caret-down"></i>
+                <input type="text" id="profissao" placeholder="Profissão">
+            </div>
+            <button class="entrar-btn" onclick="irParaCadastro3()">Próximo</button>
+        </div>
+    </div>
+
+    <script>
+        function irParaCadastro3() {
+            window.location.href = 'cadastro3.html';
+        }
+    </script>
+</body>
+</html>

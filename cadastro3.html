@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro3</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Seja Bem-vindo!</h1>
+            <p>Acesse sua conta agora mesmo.</p>
+            <button class="cadastrar-btn">Login</button>
+        </div>
+        <div class="content">
+            <h2>Cadastre-se</h2>
+        <div class="input-group">
+        <input type="text" id="CBO" placeholder="CBO">
+        </div>
+        <div class="input-group">
+        <input type="text" id="RQE" placeholder="RQE">
+        </div>
+    <div class="input-group">
+        <input type="text" id="CNES" placeholder="CNES">
+    </div>
+    <div class="input-group">
+        <i class="fas fa-eye" onclick="togglePassword()"></i>
+        <input type="password" id="password" placeholder="Senha">
+    </div>
+    <div class="input-group">
+        <i class="fas fa-eye" onclick="togglePassword()"></i>
+        <input type="password" id="confirmarsenha" placeholder="Confirmar Senha">
+    </div>
+
+    <button class="entrar-btn" onclick="irParaTelaUsuario()">Cadastrar</button>
+
+<script>
+    function irParaTelaUsuario() {
+        window.location.href = 'telausuario.html';
+    }
+</script>
+</body>
+</html>

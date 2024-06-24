@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+    <script src="https://kit.fontawesome.com/06f0979ef7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/src/css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <i class="fa-regular fa-user"></i>
+                <p>Caio Coelho</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-id-card-clip icon"></i>Prontuário</a></li>
+                    <ul class="submenu">
+                        <li><a href="#">Pacientes</a></li>
+                        <li><a href="#" class="active">Atendimento</a></li>
+                    </ul>
+                    <li><a href="#"><i class="fa-solid fa-calendar-day icon"></i>Agendamento</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info icon"></i>Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main-content">
+            <h1>Atendimento</h1>
+            <form action="Atendimento2.html" method="get">
+                <div class="form-section">
+                    <input type="text" id="paciente" placeholder="Paciente">
+                </div>
+                <div class="form-section">
+                    <input type="text" id="queixaprincipal" placeholder="Queixa principal">
+                </div>
+                <div class="form-section">
+                    <input type="text" id="historico" placeholder="Histórico e antescedentes">
+                </div>
+                <div class="form-section">
+                    <input type="text" id="exame" placeholder="Exame fisico ">
+                </div>
+                <div class="form-section">
+                    <input type="text" id="conduta" placeholder="Condutas">
+                </div>
+                <button type="submit">Próximo</button>
+            </form>
+        </main>
+    </div>
+
+</body>
+</html>

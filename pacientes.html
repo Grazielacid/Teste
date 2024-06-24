@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <script src="https://kit.fontawesome.com/06f0979ef7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <i class="fa-regular fa-user"></i>
+                <p>Caio Coelho</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-id-card-clip icon"></i>Prontuário</a></li>
+                    <li><a href="#" class="active">Pacientes</a></li>
+                    <li><a href="#">Atendimento</a></li>
+                    <li><a href="#"><i class="fa-solid fa-calendar-day icon"></i>Agendamento</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info icon"></i>Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Pacientes</h1>
+                <div class="total-pacientes">
+                    <p>10</p>
+                    <span>Total de Pacientes</span>
+                </div>
+            </header>
+            <div class="table-container">
+                <button class="add-patient" onclick="irParaIncluirpaciente()">+ Incluirpaciente</button>  
+                <input type="text" id="search" placeholder="Pesquisar por nome">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>Telefone</th>
+                            <th>Código</th>
+                            <th>Última Consulta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Cliente A</td>
+                            <td>(47) 996213534</td>
+                            <td>12312asd</td>
+                            <td>10/04/2023</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Cliente B</td>
+                            <td>(47) 996213534</td>
+                            <td>12312asd</td>
+                            <td>10/04/2023</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Cliente C</td>
+                            <td>(47) 996213534</td>
+                            <td>12312asd</td>
+                            <td>12/05/2023</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Cliente D</td>
+                            <td>(47) 996213534</td>
+                            <td>12312asd</td>
+                            <td>13/05/2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="load-more">Carregar +</button>
+                <div class="pagination">
+                    <label for="rows-per-page">Exibir</label>
+                    <select id="rows-per-page">
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                    </select>
+                    <span>por vez</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function irParaIncluirpaciente() {
+            window.location.href = 'incluirpaciente.html';
+        }
+        </script>
+
+</body>
+</html>
+

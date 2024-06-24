@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incluir Paciente3</title>
+    <script src="https://kit.fontawesome.com/06f0979ef7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="profile">
+                <i class="fa-regular fa-user"></i>
+                <p>Caio Coelho</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-id-card-clip icon"></i>Prontuário</a></li>
+                    <ul class="submenu">
+                        <li><a href="#" class="active">Pacientes</a></li>
+                        <li><a href="#">Atendimento</a></li>
+                    </ul>
+                    <li><a href="#"><i class="fa-solid fa-calendar-day icon"></i>Agendamento</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info icon"></i>Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="content">
+            <h1>Incluir Paciente</h1>
+            <h2>Convênios</h2>
+            <form action="atendimento.html" method="get">
+                <div class="form-section">
+                    <input type="text" id="convenio" placeholder="Convenio">
+                </div>
+                <div class="form-section">
+                    <input type="text" id="endereco" placeholder="N° carteirinha">
+                </div>
+                <div class="form-section">
+                    <input type="text" id="acomodacao" placeholder="Acomodação">
+                </div>
+                <div class="form-section">
+                    <input type="text" id="plano" placeholder="Plano">
+                </div>
+                <div class="form-section">
+                    <input type="text" id="validade" placeholder="Validade">
+                </div>
+                
+                <button type="submit">Concluir</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
