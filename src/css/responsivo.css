@@ -1,0 +1,108 @@
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 973px;
+    height: 534px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.sidebar {
+    background-color: #3abaff;
+    color: #fff;
+    padding: 40px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.cadastrar-btn {
+    background-color: #fff;
+    color: #27a5e8;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 150px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cadastrar-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.content {
+    width: 65%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h2 {
+    font-size: 28px;
+    color: #3abaff;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.entrar-btn {
+    background-color: #3abaff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.entrar-btn:hover {
+    background-color: #2d8bbb;
+}
+
